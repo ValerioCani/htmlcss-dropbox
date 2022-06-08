@@ -13,10 +13,6 @@ body{
     display: flex;
 }
 
-.float{
-    float: left;
-}
-
 .clearfix::after {
     content: "";
     clear: both;
@@ -25,32 +21,95 @@ body{
 
 .container-l{
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container-s{
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 .large{
     width: 100%;
 }
 
+.blue-button{
+    color: #fff;
+    background-color:#0061ff;
+    border: none;
+}
+
 /* regole mirate */
 
+/* regole barra di navigazione */
 .header-top{
     height: 80px;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    background-color: #fff;
+    justify-content: space-between;
 }
 
-.blue-button{
-    color: #fff;
-    font-size: 16px;
-    background-color:#0061ff;
-    padding: 10px 16px;
-    border: none;
+.navigation ul{
+    list-style: none;
+    height: 100%;
+    align-items: center;    
 }
+
+.navigation ul a{
+    text-decoration: none;
+    color: #000;
+    padding: 20px;
+}
+
+.nav-button{
+    font-size: 16px;
+    padding: 6px 16px;
+}
+/* regole jumbo */
 .header-bot{
     height: 740px;
     background-color:#b5d1e8;
+    margin-top: 80px;
+}
+
+.jumbo{
+    padding-top: 100px;
+}
+
+.header-bot h1{
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.jumbo section{
+    padding: 60px 0px;
+}
+
+.jumbo div a{
+    text-decoration: none;
+}
+
+.jumbo div p:first-child{
+    margin-bottom: 40px;
+}
+
+.jumbo-button{
+    padding: 10px 16px;
+}
+
+.jumbo div p:last-of-type{
+    margin-top: 40px;
+}
+
+.fa-arrow-down{
+    font-size: 50px;
+    color: #000;
+    margin-top: 30px;
+}
+
+.jumbo section img{
+    width: 66%;
 }
