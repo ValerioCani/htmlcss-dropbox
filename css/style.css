@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100vw;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -13,10 +17,8 @@ body{
     display: flex;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+.f-wrap{
+    flex-wrap: wrap;
 }
 
 .container-l{
@@ -76,16 +78,16 @@ body{
 }
 
 .jumbo{
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .header-bot h1{
-    font-size: 80px;
+    font-size: 78px;
     font-weight: 800;
 }
 
 .jumbo section{
-    padding: 60px 0px;
+    padding: 55px 0px;
 }
 
 .jumbo div a{
@@ -107,9 +109,155 @@ body{
 .fa-arrow-down{
     font-size: 50px;
     color: #000;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .jumbo section img{
-    width: 66%;
+    width: 70%;
+}
+
+/* regole main sezione pres-piani */
+
+.pres-piani{
+    margin-top: 150px;
+    margin-bottom: 70px;
+}
+
+.pres-piani h2{
+    font-size: 30px;
+}
+
+.anni-mesi{
+    height: 150px;
+    align-items: center;
+}
+
+.anni-mesi section{
+    margin-right: 30px;
+    align-items: center;
+}
+
+.radio{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    border-style: solid;
+    margin: 5px;
+}
+
+.on {
+    border-color: #0061ff;
+    border-width: 5px;
+}
+
+.off{
+    border-color: #c5c5c5;
+    border-width: 2px;
+}
+
+/* regole sezione business */
+
+.business{
+    justify-content: space-between;
+}
+
+.card{
+    width: calc(90% / 3);
+    border: solid 1px #c5c5c5 ;
+}
+
+.card-subj{
+    height: 45px;
+    border-bottom: solid 1px #c5c5c5 ;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-cont{
+    width: 80%;
+    margin: auto;
+}
+
+.card:not(h2){
+    font-size: 14px;
+}
+
+.card-button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;
+    text-decoration: none;
+}
+
+.card-button-cont{
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width:100%;
+}
+
+.divisore{
+    width: 50px;
+    height: 1px;
+    border-bottom: solid 1px #c5c5c5 ;
+}
+
+.card-list-item i{
+    color: #0061ff;
+}
+
+
+
+
+
+
+
+
+/* regole sezione testimonial */
+
+.square-s div{
+    height: 16.7vw;
+    width: 16.7vw;
+}
+
+.square-l div{
+    height: 33.2vw;
+    width: 33.2vw;
+}
+
+.design{
+    background-color: #a2d39b;
+}
+
+.asu{
+    background-color: #61082B;
+}
+
+.uf{
+    background-color: #0093CE;
+}
+
+.topps{
+    background-color: #FF1C1C;
+}
+
+.wbr{
+    background-color: #D5001F;
+}
+
+.hearts{
+    background-color: #B4D0E7;
+}
+
+.lp{
+    background-color: #0D2481;
+}
+
+.cco{
+    background-color: #FFD830;
+}
+
+.central{
+    background-color: #F5F5F5;
 }
