@@ -1,0 +1,56 @@
+/* regole generali */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+.float{
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container-l{
+    max-width: 1200px;
+}
+
+.container-s{
+    max-width: 1000px;
+}
+
+.large{
+    width: 100%;
+}
+
+/* regole mirate */
+
+.header-top{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+}
+
+.blue-button{
+    color: #fff;
+    font-size: 16px;
+    background-color:#0061ff;
+    padding: 10px 16px;
+    border: none;
+}
+.header-bot{
+    height: 740px;
+    background-color:#b5d1e8;
+}
