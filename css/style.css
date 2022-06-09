@@ -27,12 +27,8 @@ body{
     margin: 0 auto;
 }
 
-.container-s>*, .card-cont div *:nth-child(3n){
+.container-s>*, .card-cont div *:nth-child(3n), .central *{
  margin-bottom: 50px;
-}
-
-.w3{
-    width: 30%;
 }
 
 .w70{
@@ -43,7 +39,7 @@ body{
     width: 30%;
 }
 
-.large{
+.large, .infobox img{
     width: 100%;
 }
 
@@ -61,7 +57,6 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     background-color: #fff;
 }
 
@@ -109,7 +104,7 @@ body{
     text-decoration: none;
 }
 
-.jumbo div p:first-child, .infobox, .functions h2{
+.jumbo div p:first-child, .infobox, .functions h2, .link h2{
     margin-bottom: 40px;
 }
 
@@ -196,7 +191,6 @@ body{
 .card-button{
     padding-top: 10px;
     padding-bottom: 10px;
-    width:100%;
     text-decoration: none;
 }
 
@@ -205,12 +199,11 @@ body{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    width:100%;
 }
 
 .divisore{
     width: 50px;
-    height: 1px;
+    height: 0px;
     border-bottom: solid 1px #c5c5c5 ;
 }
 
@@ -248,34 +241,42 @@ body{
     border: solid #000 1px;   
 }
 
-/* recole sezoine fuctions */
+/* regole sezione link */
 
-
-.infobox img{
-    width: 100%;
+.link{
+    padding: 70px 0px;
 }
 /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
-
-
 /* regole sezione customer */
 
 .customer{
     height: calc(100vw / 3);
-    width: calc(100vw - 17px);
-}
-
-.square-s{
-    width: calc(100% / 3);
-}
-
-.square-s div{
-    height: 50%;
-    width: 50%
 }
 
 .square-l{
-    width: calc(100% / 3); 
+    width: calc(100% / 3);
+}
+
+.square-s{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.central{
+    height: 100%;
+    width: 100%;
     background-color: #F5F5F5;
+    padding: 50px 40px;
+}
+
+.central img, .square-s,.square-s img{
+    width: 50%;
+}
+
+.central .divisore{
+    width: 100px;
 }
 
 .design{
@@ -308,5 +309,15 @@ body{
 
 .cco{
     background-color: #FFD830;
+}
+
+.square-s img{
+    filter: invert(1);
+}
+
+.square-s:hover{
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
 }
 
