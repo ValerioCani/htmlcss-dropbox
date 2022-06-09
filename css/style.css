@@ -82,7 +82,6 @@ body{
 }
 /* regole jumbo */
 .header-bot{
-    height: 740px;
     background-color:#b5d1e8;
     margin-top: 80px;
 }
@@ -94,10 +93,6 @@ body{
 .header-bot h1{
     font-size: 78px;
     font-weight: 800;
-}
-
-.jumbo section{
-    padding: 55px 0px;
 }
 
 .jumbo div a{
@@ -129,7 +124,7 @@ body{
     margin-bottom: 70px;
 }
 
-.pres-piani h2, .functions>h2, .link h2{
+.pres-piani h2, .functions>h2, .link h2, .trial h2{
     font-size: 40px;
 }
 
@@ -189,8 +184,6 @@ body{
 
 
 .card-button{
-    padding-top: 10px;
-    padding-bottom: 10px;
     text-decoration: none;
 }
 
@@ -246,7 +239,7 @@ body{
 .link{
     padding: 70px 0px;
 }
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
 /* regole sezione customer */
 
 .customer{
@@ -269,6 +262,7 @@ body{
     width: 100%;
     background-color: #F5F5F5;
     padding: 50px 40px;
+    overflow: hidden;
 }
 
 .central img, .square-s,.square-s img{
@@ -320,4 +314,26 @@ body{
     border-color: rgba(255, 255, 255, 0.5);
     border-style: solid;
 }
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+/* regole sezione trial */
 
+.trial{
+    background-color: #b5d1e8;
+}
+
+.trial h2{
+    color: #61082B;
+}
+
+.trial span{
+    color: #000;
+    background-color: #fff;
+}
+
+.trial .container-s div{
+    padding: 150px 0px 90px 0px;
+}
+
+.trial .container-s .w70{
+    padding-right: 20%;
+}
