@@ -27,6 +27,10 @@ body{
     margin: 0 auto;
 }
 
+.col3{
+    width: 30%;
+}
+
 .large{
     width: 100%;
 }
@@ -157,12 +161,11 @@ body{
     justify-content: space-between;
 }
 
-.card{
-    width: calc(90% / 3);
+.card, .team{
     border: solid 1px #c5c5c5 ;
 }
 
-.card-subj{
+.card-subj, .team-subj{
     height: 45px;
     border-bottom: solid 1px #c5c5c5 ;
     justify-content: center;
@@ -172,10 +175,20 @@ body{
 .card-cont{
     width: 80%;
     margin: auto;
+    padding:20px 0px;
 }
 
-.card:not(h2){
+.card:not(h2), .team:not(h2){
     font-size: 14px;
+}
+
+.card-cont *{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-cont div *:nth-child(3n){
+    margin-bottom: 50px;
 }
 
 .card-button{
@@ -203,6 +216,7 @@ body{
     color: #0061ff;
 }
 
+/* parte delle regole della sezione team (alcune sono in comune con sezione business ) */
 
 
 
@@ -210,9 +224,9 @@ body{
 
 
 
-/* regole sezione testimonial */
+/* regole sezione customer */
 
-.testimonial{
+.customer{
     height: calc(100vw / 3);
     width: calc(100vw - 17px);
 }
