@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-html {
-    width: 100vw;
-}
-
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -216,14 +212,23 @@ body{
 
 /* regole sezione testimonial */
 
-.square-s div{
-    height: 16.7vw;
-    width: 16.7vw;
+.testimonial{
+    height: calc(100vw / 3);
+    width: calc(100vw - 17px);
 }
 
-.square-l div{
-    height: 33.2vw;
-    width: 33.2vw;
+.square-s{
+    width: calc(100% / 3);
+}
+
+.square-s div{
+    height: 50%;
+    width: 50%
+}
+
+.square-l{
+    width: calc(100% / 3); 
+    background-color: #F5F5F5;
 }
 
 .design{
@@ -258,6 +263,3 @@ body{
     background-color: #FFD830;
 }
 
-.central{
-    background-color: #F5F5F5;
-}
