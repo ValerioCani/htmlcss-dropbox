@@ -181,14 +181,18 @@ body{
     justify-content: center;
     align-items: center;
 }
+/* HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH */
+.benefit, .icon{
+    display: inline-block;
+}
+
+.benefit{
+    width: calc(100% - 20px);
+    vertical-align: text-top;
+}
 
 .card-cont ul, footer ul{
     list-style: none;
-}
-
-.card-cont ul li p{
-    display: inline-block;
-    height: 100%;
 }
 
 .card-cont, .team-cont .team-sez1, .team-cont .team-sez2{
@@ -199,7 +203,7 @@ body{
     font-size: 14px;
 }
 
-.card-cont *{
+.card-cont li{
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -238,8 +242,8 @@ body{
 }
 
 .partner-text, .link, .foot-bot{
-    padding: 70px 0px;
     /*unica regola sezione link */
+    padding: 70px 0px;
 }
 
 .partner-button{ 
@@ -370,7 +374,7 @@ body{
 }
 
 /* regole footer */
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
 footer{
     background-color: #000;   
     color:#c5c5c5;
