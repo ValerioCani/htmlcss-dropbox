@@ -66,8 +66,18 @@ body{
 
 .navigation ul{
     list-style: none;
+    height: 100%;    
+}
+
+.navigation li {
     height: 100%;
-    align-items: center;    
+    display: flex;
+    align-items: center;
+}
+
+.select:hover{
+    box-sizing: content-box;
+    border-bottom: solid 2px #000;
 }
 
 .navigation ul a{
@@ -93,6 +103,11 @@ body{
 .header-bot h1{
     font-size: 78px;
     font-weight: 800;
+}
+
+.jumbo section{
+    position: relative;
+    top: 60px;
 }
 
 .jumbo div a{
