@@ -134,12 +134,12 @@ body{
 
 /* regole main sezione pres-piani */
 
-.pres-piani{
+.pres-piani, .q-and-a h2{
     margin-top: 150px;
     margin-bottom: 70px;
 }
 
-.pres-piani h2, .functions>h2, .link h2, .trial h2{
+.pres-piani h2, .functions>h2, .link h2, .trial h2, .q-and-a h2{
     font-size: 40px;
 }
 
@@ -329,7 +329,7 @@ body{
     border-color: rgba(255, 255, 255, 0.5);
     border-style: solid;
 }
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
 /* regole sezione trial */
 
 .trial{
@@ -351,4 +351,28 @@ body{
 
 .trial .container-s .w70{
     padding-right: 20%;
+}
+
+/* regole sezione q-and-a */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+.bot-border{
+    border-bottom: solid 1px #000;
+}
+
+.question, .answer{
+    padding: 50px 20px 50px 0px;
+    justify-content: space-between;
+}
+
+.answer{
+    display: none;
+} 
+
+.q-a-container:hover > .answer{
+    display: block;
+}
+
+.q-a-container:hover .fa-chevron-down{
+    transform:rotate(180deg)
 }
