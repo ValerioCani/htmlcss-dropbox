@@ -27,7 +27,7 @@ body{
     margin: 0 auto;
 }
 
-.container-s>*, .card-cont div *:nth-child(3n), .central *{
+.container-s>*, .card-cont>ul>li:nth-child(3n), .central *{
  margin-bottom: 50px;
 }
 
@@ -81,9 +81,12 @@ body{
 }
 
 .navigation ul a{
-    text-decoration: none;
     color: #000;
     padding: 20px;
+}
+
+.navigation ul a, .jumbo div a, .card-button, .foot-cont ul a{
+    text-decoration: none;
 }
 
 .nav-button{
@@ -110,11 +113,7 @@ body{
     top: 60px;
 }
 
-.jumbo div a{
-    text-decoration: none;
-}
-
-.jumbo div p:first-child, .infobox, .functions h2, .link h2{
+.jumbo div p:first-child, .infobox, .functions h2, .link h2, .foot-cont h3{
     margin-bottom: 40px;
 }
 
@@ -122,14 +121,13 @@ body{
     padding: 10px 16px;
 }
 
-.jumbo div p:last-of-type{
+.jumbo div p:last-of-type, .team-sez1 :last-child, .fa-arrow-down{
     margin-top: 40px;
 }
 
 .fa-arrow-down{
     font-size: 50px;
     color: #000;
-    margin-top: 40px;
 }
 
 /* regole main sezione pres-piani */
@@ -184,6 +182,15 @@ body{
     align-items: center;
 }
 
+.card-cont ul, footer ul{
+    list-style: none;
+}
+
+.card-cont ul li p{
+    display: inline-block;
+    height: 100%;
+}
+
 .card-cont, .team-cont .team-sez1, .team-cont .team-sez2{
     padding:40px 30px;
 }
@@ -195,11 +202,6 @@ body{
 .card-cont *{
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-
-.card-button{
-    text-decoration: none;
 }
 
 .card-button-cont{
@@ -215,7 +217,7 @@ body{
     border-bottom: solid 1px #c5c5c5 ;
 }
 
-.card-list-item i{
+.fa-check{
     color: #0061ff;
 }
 
@@ -225,13 +227,9 @@ body{
     margin-bottom: 20px;
 }
 
-.team-sez1 :last-child{
-    margin-top: 40px;
-}
-
 /* regole sezione partner */
 
-.partner{
+.partner, .foot-cont    {
     padding: 80px 0px;
 }
 
@@ -239,20 +237,15 @@ body{
     width: 90%;
 }
 
-.partner-text{
+.partner-text, .link, .foot-bot{
     padding: 70px 0px;
+    /*unica regola sezione link */
 }
 
 .partner-button{ 
     display: inline-block;   
     text-align: center;
     border: solid #000 1px;   
-}
-
-/* regole sezione link */
-
-.link{
-    padding: 70px 0px;
 }
 
 /* regole sezione customer */
@@ -284,7 +277,7 @@ body{
     width: 50%;
 }
 
-.central .divisore{
+.divisore-l{
     width: 100px;
 }
 
@@ -354,7 +347,6 @@ body{
 }
 
 /* regole sezione q-and-a */
-/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
 
 .bot-border{
     border-bottom: solid 1px #000;
@@ -375,4 +367,27 @@ body{
 
 .q-a-container:hover .fa-chevron-down{
     transform:rotate(180deg)
+}
+
+/* regole footer */
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+footer{
+    background-color: #000;   
+    color:#c5c5c5;
+}
+
+footer .foot-cont{
+    justify-content: space-between;
+}
+
+.foot-cont ul a{
+    color: #fff;
+}
+
+.foot-cont ul li{
+    padding: 10px 0;
+}
+
+.foot-bot{
+    font-size: 20px;
 }
